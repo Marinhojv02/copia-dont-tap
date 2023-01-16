@@ -1,0 +1,95 @@
+section{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+ul {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "col1-item1 col2-item1 col3-item1 col4-item1"
+    "col1-item2 col2-item2 col3-item2 col4-item2"
+    "col1-item3 col2-item3 col3-item3 col4-item3"
+    "col1-item4 col2-item3 col3-item4 col4-item4";
+  li{
+    list-style: none;
+    button{
+      padding: 50px;
+      &.black{
+        border: 2px solid gray;
+        background-color: black;
+      }
+      &.white{
+        border: 2px solid gray;
+        background-color: white;
+      }
+    }
+  }
+}
+
+/* Assign a class to each li */
+    /* Column 1 */
+.col1-item1 { grid-area: col1-item1; }
+.col1-item2 { grid-area: col1-item2; }
+.col1-item3 { grid-area: col1-item3; }
+.col1-item4 { grid-area: col1-item4; }
+    /* Column 2 */
+.col2-item1 { grid-area: col2-item1; }
+.col2-item2 { grid-area: col2-item2; }
+.col2-item3 { grid-area: col2-item3; }
+.col2-item4 { grid-area: col1-item4; }
+/* Column 3 */
+.col3-item1 { grid-area: col3-item1; }
+.col3-item2 { grid-area: col3-item2; }
+.col3-item3 { grid-area: col3-item3; }
+.col3-item4 { grid-area: col3-item4; }
+/* Colum 4 */
+.col4-item1 { grid-area: col4-item1; }
+.col4-item2 { grid-area: col4-item2; }
+.col4-item3 { grid-area: col4-item3; }
+.col4-item4 { grid-area: col4-item4; }
+
+
+.container{
+  padding: 35px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: rgb(96, 181, 255);
+
+}
+
+//classes
+.container{
+  text-align: center;
+
+  h3{
+    font-size: 45px;
+    font-weight: 900;
+  }
+  h4{
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+.restart{
+  display: flex;
+  justify-content: center;
+  button{
+    padding: 35px;
+    background: rgb(96, 181, 255);
+
+    border: none;
+
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+
+
